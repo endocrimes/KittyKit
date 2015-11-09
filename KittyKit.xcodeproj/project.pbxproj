@@ -24,6 +24,8 @@
 		658A27DF1BF1424900EA9A9C /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D21BF1424900EA9A9C /* Warnings.xcconfig */; settings = {ASSET_TAGS = (); }; };
 		658A27E01BF1424900EA9A9C /* watchOS Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
 		658A27E41BF1453A00EA9A9C /* homepage.html in Resources */ = {isa = PBXBuildFile; fileRef = 658A27E31BF1453A00EA9A9C /* homepage.html */; settings = {ASSET_TAGS = (); }; };
+		658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E71BF1456B00EA9A9C /* APIClient.swift */; settings = {ASSET_TAGS = (); }; };
+		658A27EA1BF145AE00EA9A9C /* Maybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E91BF145AE00EA9A9C /* Maybe.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		658A27D21BF1424900EA9A9C /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS Framework.xcconfig"; sourceTree = "<group>"; };
 		658A27E31BF1453A00EA9A9C /* homepage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = homepage.html; sourceTree = "<group>"; };
+		658A27E71BF1456B00EA9A9C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		658A27E91BF145AE00EA9A9C /* Maybe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maybe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				658A27AE1BF1421200EA9A9C /* KittyKit.h */,
+				658A27E71BF1456B00EA9A9C /* APIClient.swift */,
+				658A27E91BF145AE00EA9A9C /* Maybe.swift */,
 				658A27B01BF1421200EA9A9C /* Info.plist */,
 			);
 			path = KittyKit;
@@ -209,6 +215,7 @@
 		658A27A21BF1421200EA9A9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rocket Apps Limited";
 				TargetAttributes = {
@@ -274,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658A27EA1BF145AE00EA9A9C /* Maybe.swift in Sources */,
+				658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -399,6 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.KittyKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -406,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
