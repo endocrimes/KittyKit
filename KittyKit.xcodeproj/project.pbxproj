@@ -8,24 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		658A27AF1BF1421200EA9A9C /* KittyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 658A27AE1BF1421200EA9A9C /* KittyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		658A27B61BF1421200EA9A9C /* KittyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658A27AB1BF1421200EA9A9C /* KittyKit.framework */; settings = {ASSET_TAGS = (); }; };
-		658A27D41BF1424900EA9A9C /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27C71BF1424900EA9A9C /* Debug.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27D51BF1424900EA9A9C /* iOS Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27C81BF1424900EA9A9C /* iOS Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27D61BF1424900EA9A9C /* iOS Static Library.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27C91BF1424900EA9A9C /* iOS Static Library.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27D71BF1424900EA9A9C /* iOS Tests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CA1BF1424900EA9A9C /* iOS Tests.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27D81BF1424900EA9A9C /* OSX Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CB1BF1424900EA9A9C /* OSX Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27D91BF1424900EA9A9C /* OSX Tests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CC1BF1424900EA9A9C /* OSX Tests.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27DA1BF1424900EA9A9C /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CD1BF1424900EA9A9C /* Release.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27DB1BF1424900EA9A9C /* Shared Framework_Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CE1BF1424900EA9A9C /* Shared Framework_Base.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27DC1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27DD1BF1424900EA9A9C /* Shared Framework_Tests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27DE1BF1424900EA9A9C /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D11BF1424900EA9A9C /* Shared.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27DF1BF1424900EA9A9C /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D21BF1424900EA9A9C /* Warnings.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27E01BF1424900EA9A9C /* watchOS Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		658A27E41BF1453A00EA9A9C /* homepage.html in Resources */ = {isa = PBXBuildFile; fileRef = 658A27E31BF1453A00EA9A9C /* homepage.html */; settings = {ASSET_TAGS = (); }; };
-		658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E71BF1456B00EA9A9C /* APIClient.swift */; settings = {ASSET_TAGS = (); }; };
-		658A27EA1BF145AE00EA9A9C /* Maybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E91BF145AE00EA9A9C /* Maybe.swift */; settings = {ASSET_TAGS = (); }; };
-		658A27EC1BF1477D00EA9A9C /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */; settings = {ASSET_TAGS = (); }; };
+		658A27B61BF1421200EA9A9C /* KittyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658A27AB1BF1421200EA9A9C /* KittyKit.framework */; };
+		658A27E41BF1453A00EA9A9C /* homepage.html in Resources */ = {isa = PBXBuildFile; fileRef = 658A27E31BF1453A00EA9A9C /* homepage.html */; };
+		658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E71BF1456B00EA9A9C /* APIClient.swift */; };
+		658A27EA1BF145AE00EA9A9C /* Maybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E91BF145AE00EA9A9C /* Maybe.swift */; };
+		658A27EC1BF1477D00EA9A9C /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,19 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658A27D91BF1424900EA9A9C /* OSX Tests.xcconfig in Resources */,
-				658A27D81BF1424900EA9A9C /* OSX Framework.xcconfig in Resources */,
-				658A27D51BF1424900EA9A9C /* iOS Framework.xcconfig in Resources */,
-				658A27D61BF1424900EA9A9C /* iOS Static Library.xcconfig in Resources */,
-				658A27DB1BF1424900EA9A9C /* Shared Framework_Base.xcconfig in Resources */,
-				658A27E01BF1424900EA9A9C /* watchOS Framework.xcconfig in Resources */,
-				658A27D41BF1424900EA9A9C /* Debug.xcconfig in Resources */,
-				658A27DC1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig in Resources */,
-				658A27DE1BF1424900EA9A9C /* Shared.xcconfig in Resources */,
-				658A27DD1BF1424900EA9A9C /* Shared Framework_Tests.xcconfig in Resources */,
-				658A27DF1BF1424900EA9A9C /* Warnings.xcconfig in Resources */,
-				658A27DA1BF1424900EA9A9C /* Release.xcconfig in Resources */,
-				658A27D71BF1424900EA9A9C /* iOS Tests.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
