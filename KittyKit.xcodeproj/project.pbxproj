@@ -49,6 +49,10 @@
 		658A27E71BF1456B00EA9A9C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		658A27E91BF145AE00EA9A9C /* Maybe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maybe.swift; sourceTree = "<group>"; };
 		658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		658A27EE1BF1507400EA9A9C /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		658A27EF1BF1507B00EA9A9C /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		658A27F41BF1524400EA9A9C /* Tests_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests_Debug.xcconfig; sourceTree = "<group>"; };
+		658A27F51BF1525D00EA9A9C /* Tests_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests_Release.xcconfig; sourceTree = "<group>"; };
 		FBF5AEB05690460E2C4A89F4 /* Pods_KittyKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KittyKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,7 @@
 		658A27A11BF1421200EA9A9C = {
 			isa = PBXGroup;
 			children = (
+				658A27ED1BF1504700EA9A9C /* Configurations */,
 				658A27C51BF1423600EA9A9C /* External */,
 				658A27AD1BF1421200EA9A9C /* KittyKit */,
 				658A27B91BF1421200EA9A9C /* KittyKitTests */,
@@ -164,6 +169,17 @@
 				658A27E31BF1453A00EA9A9C /* homepage.html */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		658A27ED1BF1504700EA9A9C /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				658A27EE1BF1507400EA9A9C /* Framework.xcconfig */,
+				658A27EF1BF1507B00EA9A9C /* Tests.xcconfig */,
+				658A27F41BF1524400EA9A9C /* Tests_Debug.xcconfig */,
+				658A27F51BF1525D00EA9A9C /* Tests_Release.xcconfig */,
+			);
+			name = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +454,7 @@
 		};
 		658A27C01BF1421200EA9A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */;
+			baseConfigurationReference = 658A27EE1BF1507400EA9A9C /* Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -460,7 +476,7 @@
 		};
 		658A27C11BF1421200EA9A9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */;
+			baseConfigurationReference = 658A27EE1BF1507400EA9A9C /* Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -481,7 +497,7 @@
 		};
 		658A27C31BF1421200EA9A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */;
+			baseConfigurationReference = 658A27F41BF1524400EA9A9C /* Tests_Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -495,7 +511,7 @@
 		};
 		658A27C41BF1421200EA9A9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */;
+			baseConfigurationReference = 658A27F51BF1525D00EA9A9C /* Tests_Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;

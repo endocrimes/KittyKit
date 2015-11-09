@@ -1,0 +1,9 @@
+//
+//  Framework.xcconfig
+//  KittyKit
+//
+//  Created by  Danielle Lancashireon 09/11/2015.
+//  Copyright © 2015 Rocket Apps Limited. All rights reserved.
+//
+
+#include "External/xcconfigs/Shared Framework_Base.xcconfig"
