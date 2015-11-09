@@ -13,6 +13,7 @@
 		658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E71BF1456B00EA9A9C /* APIClient.swift */; };
 		658A27EA1BF145AE00EA9A9C /* Maybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E91BF145AE00EA9A9C /* Maybe.swift */; };
 		658A27EC1BF1477D00EA9A9C /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */; };
+		7D3A1DE8DCD75F90C8227406 /* Pods_KittyKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5AEB05690460E2C4A89F4 /* Pods_KittyKitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		658A27E71BF1456B00EA9A9C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		658A27E91BF145AE00EA9A9C /* Maybe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maybe.swift; sourceTree = "<group>"; };
 		658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		FBF5AEB05690460E2C4A89F4 /* Pods_KittyKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KittyKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +65,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				658A27B61BF1421200EA9A9C /* KittyKit.framework in Frameworks */,
+				7D3A1DE8DCD75F90C8227406 /* Pods_KittyKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29B645FE7266C1B24EA2564A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBF5AEB05690460E2C4A89F4 /* Pods_KittyKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D347C21A0E2EC420A8D3D49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		658A27A11BF1421200EA9A9C = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +94,8 @@
 				658A27AD1BF1421200EA9A9C /* KittyKit */,
 				658A27B91BF1421200EA9A9C /* KittyKitTests */,
 				658A27AC1BF1421200EA9A9C /* Products */,
+				3D347C21A0E2EC420A8D3D49 /* Pods */,
+				29B645FE7266C1B24EA2564A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 658A27C21BF1421200EA9A9C /* Build configuration list for PBXNativeTarget "KittyKitTests" */;
 			buildPhases = (
+				D25F84AEFB9FC2892089FE01 /* Check Pods Manifest.lock */,
 				658A27B11BF1421200EA9A9C /* Sources */,
 				658A27B21BF1421200EA9A9C /* Frameworks */,
 				658A27B31BF1421200EA9A9C /* Resources */,
+				348CF9F1233C7404084214C6 /* Embed Pods Frameworks */,
+				29DD2FF3778EA230B47CE6E4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +272,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29DD2FF3778EA230B47CE6E4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittyKitTests/Pods-KittyKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		348CF9F1233C7404084214C6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittyKitTests/Pods-KittyKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D25F84AEFB9FC2892089FE01 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		658A27A61BF1421200EA9A9C /* Sources */ = {
