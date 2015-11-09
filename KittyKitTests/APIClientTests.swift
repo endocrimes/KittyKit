@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import KittyKit
+import OHHTTPStubs
 
 class APIClientTests: XCTestCase {
     var apiClient: APIClient?
@@ -16,6 +17,8 @@ class APIClientTests: XCTestCase {
         super.setUp()
         
         apiClient = APIClient()
+        
+        stub
     }
     
     override func tearDown() {
