@@ -10,6 +10,19 @@
 		658A27AF1BF1421200EA9A9C /* KittyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 658A27AE1BF1421200EA9A9C /* KittyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		658A27B61BF1421200EA9A9C /* KittyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658A27AB1BF1421200EA9A9C /* KittyKit.framework */; settings = {ASSET_TAGS = (); }; };
 		658A27BB1BF1421200EA9A9C /* KittyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27BA1BF1421200EA9A9C /* KittyKitTests.swift */; };
+		658A27D41BF1424900EA9A9C /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27C71BF1424900EA9A9C /* Debug.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27D51BF1424900EA9A9C /* iOS Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27C81BF1424900EA9A9C /* iOS Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27D61BF1424900EA9A9C /* iOS Static Library.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27C91BF1424900EA9A9C /* iOS Static Library.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27D71BF1424900EA9A9C /* iOS Tests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CA1BF1424900EA9A9C /* iOS Tests.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27D81BF1424900EA9A9C /* OSX Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CB1BF1424900EA9A9C /* OSX Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27D91BF1424900EA9A9C /* OSX Tests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CC1BF1424900EA9A9C /* OSX Tests.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27DA1BF1424900EA9A9C /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CD1BF1424900EA9A9C /* Release.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27DB1BF1424900EA9A9C /* Shared Framework_Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CE1BF1424900EA9A9C /* Shared Framework_Base.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27DC1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27DD1BF1424900EA9A9C /* Shared Framework_Tests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27DE1BF1424900EA9A9C /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D11BF1424900EA9A9C /* Shared.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27DF1BF1424900EA9A9C /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D21BF1424900EA9A9C /* Warnings.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27E01BF1424900EA9A9C /* watchOS Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +42,19 @@
 		658A27B51BF1421200EA9A9C /* KittyKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittyKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		658A27BA1BF1421200EA9A9C /* KittyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyKitTests.swift; sourceTree = "<group>"; };
 		658A27BC1BF1421200EA9A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		658A27C71BF1424900EA9A9C /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		658A27C81BF1424900EA9A9C /* iOS Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS Framework.xcconfig"; sourceTree = "<group>"; };
+		658A27C91BF1424900EA9A9C /* iOS Static Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS Static Library.xcconfig"; sourceTree = "<group>"; };
+		658A27CA1BF1424900EA9A9C /* iOS Tests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS Tests.xcconfig"; sourceTree = "<group>"; };
+		658A27CB1BF1424900EA9A9C /* OSX Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "OSX Framework.xcconfig"; sourceTree = "<group>"; };
+		658A27CC1BF1424900EA9A9C /* OSX Tests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "OSX Tests.xcconfig"; sourceTree = "<group>"; };
+		658A27CD1BF1424900EA9A9C /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		658A27CE1BF1424900EA9A9C /* Shared Framework_Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Shared Framework_Base.xcconfig"; sourceTree = "<group>"; };
+		658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Shared Framework_Framework.xcconfig"; sourceTree = "<group>"; };
+		658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Shared Framework_Tests.xcconfig"; sourceTree = "<group>"; };
+		658A27D11BF1424900EA9A9C /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		658A27D21BF1424900EA9A9C /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS Framework.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +79,7 @@
 		658A27A11BF1421200EA9A9C = {
 			isa = PBXGroup;
 			children = (
+				658A27C51BF1423600EA9A9C /* External */,
 				658A27AD1BF1421200EA9A9C /* KittyKit */,
 				658A27B91BF1421200EA9A9C /* KittyKitTests */,
 				658A27AC1BF1421200EA9A9C /* Products */,
@@ -84,6 +111,35 @@
 				658A27BC1BF1421200EA9A9C /* Info.plist */,
 			);
 			path = KittyKitTests;
+			sourceTree = "<group>";
+		};
+		658A27C51BF1423600EA9A9C /* External */ = {
+			isa = PBXGroup;
+			children = (
+				658A27C61BF1424900EA9A9C /* xcconfigs */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		658A27C61BF1424900EA9A9C /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				658A27C71BF1424900EA9A9C /* Debug.xcconfig */,
+				658A27C81BF1424900EA9A9C /* iOS Framework.xcconfig */,
+				658A27C91BF1424900EA9A9C /* iOS Static Library.xcconfig */,
+				658A27CA1BF1424900EA9A9C /* iOS Tests.xcconfig */,
+				658A27CB1BF1424900EA9A9C /* OSX Framework.xcconfig */,
+				658A27CC1BF1424900EA9A9C /* OSX Tests.xcconfig */,
+				658A27CD1BF1424900EA9A9C /* Release.xcconfig */,
+				658A27CE1BF1424900EA9A9C /* Shared Framework_Base.xcconfig */,
+				658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */,
+				658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */,
+				658A27D11BF1424900EA9A9C /* Shared.xcconfig */,
+				658A27D21BF1424900EA9A9C /* Warnings.xcconfig */,
+				658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */,
+			);
+			name = xcconfigs;
+			path = External/xcconfigs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +232,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658A27D91BF1424900EA9A9C /* OSX Tests.xcconfig in Resources */,
+				658A27D81BF1424900EA9A9C /* OSX Framework.xcconfig in Resources */,
+				658A27D51BF1424900EA9A9C /* iOS Framework.xcconfig in Resources */,
+				658A27D61BF1424900EA9A9C /* iOS Static Library.xcconfig in Resources */,
+				658A27DB1BF1424900EA9A9C /* Shared Framework_Base.xcconfig in Resources */,
+				658A27E01BF1424900EA9A9C /* watchOS Framework.xcconfig in Resources */,
+				658A27D41BF1424900EA9A9C /* Debug.xcconfig in Resources */,
+				658A27DC1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig in Resources */,
+				658A27DE1BF1424900EA9A9C /* Shared.xcconfig in Resources */,
+				658A27DD1BF1424900EA9A9C /* Shared Framework_Tests.xcconfig in Resources */,
+				658A27DF1BF1424900EA9A9C /* Warnings.xcconfig in Resources */,
+				658A27DA1BF1424900EA9A9C /* Release.xcconfig in Resources */,
+				658A27D71BF1424900EA9A9C /* iOS Tests.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +286,7 @@
 /* Begin XCBuildConfiguration section */
 		658A27BD1BF1421200EA9A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A27C71BF1424900EA9A9C /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -263,6 +333,7 @@
 		};
 		658A27BE1BF1421200EA9A9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A27CD1BF1424900EA9A9C /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -301,7 +372,9 @@
 		};
 		658A27C01BF1421200EA9A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -319,7 +392,9 @@
 		};
 		658A27C11BF1421200EA9A9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A27CF1BF1424900EA9A9C /* Shared Framework_Framework.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -337,6 +412,7 @@
 		};
 		658A27C31BF1421200EA9A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = KittyKitTests/Info.plist;
@@ -348,6 +424,7 @@
 		};
 		658A27C41BF1421200EA9A9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = KittyKitTests/Info.plist;
@@ -367,7 +444,7 @@
 				658A27BE1BF1421200EA9A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		658A27BF1BF1421200EA9A9C /* Build configuration list for PBXNativeTarget "KittyKit" */ = {
 			isa = XCConfigurationList;
@@ -376,6 +453,7 @@
 				658A27C11BF1421200EA9A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		658A27C21BF1421200EA9A9C /* Build configuration list for PBXNativeTarget "KittyKitTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +462,7 @@
 				658A27C41BF1421200EA9A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
