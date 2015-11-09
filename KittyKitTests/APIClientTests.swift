@@ -17,13 +17,27 @@ class APIClientTests: XCTestCase {
         super.setUp()
         
         apiClient = APIClient()
-        
-        stub
     }
     
     override func tearDown() {
         super.tearDown()
         
         apiClient = nil
+        OHHTTPStubs.removeAllStubs()
+    }
+    
+    func test_can_retreive_verification_token() {
+        let testBundle = NSBundle(forClass: self.dynamicType)
+        let filePath = testBundle.pathForResource("homepage", ofType: "html")!
+        stub(isScheme("https") && isHost("small.cat")) { _ in
+            return fixture(filePath, headers: nil)
+        }
+        
+        let expectation = expectationWithDescription("Completion should be called")
+        apiClient?.fetchAuthenticityToken { result in
+           expectation.fulfill()
+        }
+        
+        waitForExpectationsWithTimeout(1.0, handler: nil)
     }
 }
