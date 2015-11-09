@@ -23,6 +23,7 @@
 		658A27DE1BF1424900EA9A9C /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D11BF1424900EA9A9C /* Shared.xcconfig */; settings = {ASSET_TAGS = (); }; };
 		658A27DF1BF1424900EA9A9C /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D21BF1424900EA9A9C /* Warnings.xcconfig */; settings = {ASSET_TAGS = (); }; };
 		658A27E01BF1424900EA9A9C /* watchOS Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
+		658A27E41BF1453A00EA9A9C /* homepage.html in Resources */ = {isa = PBXBuildFile; fileRef = 658A27E31BF1453A00EA9A9C /* homepage.html */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		658A27D11BF1424900EA9A9C /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		658A27D21BF1424900EA9A9C /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS Framework.xcconfig"; sourceTree = "<group>"; };
+		658A27E31BF1453A00EA9A9C /* homepage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = homepage.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		658A27B91BF1421200EA9A9C /* KittyKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				658A27E21BF1453A00EA9A9C /* Mocks */,
 				658A27BA1BF1421200EA9A9C /* KittyKitTests.swift */,
 				658A27BC1BF1421200EA9A9C /* Info.plist */,
 			);
@@ -140,6 +143,14 @@
 			);
 			name = xcconfigs;
 			path = External/xcconfigs;
+			sourceTree = "<group>";
+		};
+		658A27E21BF1453A00EA9A9C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				658A27E31BF1453A00EA9A9C /* homepage.html */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658A27E41BF1453A00EA9A9C /* homepage.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
