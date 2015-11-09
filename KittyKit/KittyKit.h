@@ -6,7 +6,7 @@
 //  Copyright © 2015 Rocket Apps Limited. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for KittyKit.
 FOUNDATION_EXPORT double KittyKitVersionNumber;
