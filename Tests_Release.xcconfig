@@ -1,0 +1,10 @@
+//
+//  Tests_Release.xcconfig
+//  KittyKit
+//
+//  Created by Daniel Tomlinson on 09/11/2015.
+//  Copyright © 2015 Rocket Apps Limited. All rights reserved.
+//
+
+#include "Tests.xcconfig"
+#include "Pods/Target Support Files/Pods-KittyKitTests/Pods-KittyKitTests.release.xcconfig"
