@@ -34,8 +34,10 @@ class APIClientTests: XCTestCase {
         }
         
         let expectation = expectationWithDescription("Completion should be called")
-        apiClient?.fetchAuthenticityToken { result in
-           expectation.fulfill()
+        apiClient?.fetchAuthenticityToken { (result: Either<AuthenticityToken, ErrorType>) in
+            XCTAssertNotNil(result.left)
+            XCTAssertEqual(result.left, "hw9PNaQf7qh9yFsD2lMK1V7GPJfW6VLjLm4ftlLj9mw=")
+            expectation.fulfill()
         }
         
         waitForExpectationsWithTimeout(1.0, handler: nil)
