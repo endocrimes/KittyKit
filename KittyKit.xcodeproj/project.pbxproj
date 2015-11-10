@@ -98,11 +98,11 @@
 			children = (
 				658A27ED1BF1504700EA9A9C /* Configurations */,
 				658A27C51BF1423600EA9A9C /* External */,
+				29B645FE7266C1B24EA2564A /* Frameworks */,
 				658A27AD1BF1421200EA9A9C /* KittyKit */,
 				658A27B91BF1421200EA9A9C /* KittyKitTests */,
-				658A27AC1BF1421200EA9A9C /* Products */,
 				3D347C21A0E2EC420A8D3D49 /* Pods */,
-				29B645FE7266C1B24EA2564A /* Frameworks */,
+				658A27AC1BF1421200EA9A9C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,11 +118,11 @@
 		658A27AD1BF1421200EA9A9C /* KittyKit */ = {
 			isa = PBXGroup;
 			children = (
-				658A27AE1BF1421200EA9A9C /* KittyKit.h */,
 				658A27E71BF1456B00EA9A9C /* APIClient.swift */,
 				65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */,
 				658A27E91BF145AE00EA9A9C /* Either.swift */,
 				658A27B01BF1421200EA9A9C /* Info.plist */,
+				658A27AE1BF1421200EA9A9C /* KittyKit.h */,
 			);
 			path = KittyKit;
 			sourceTree = "<group>";
@@ -131,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				658A27E21BF1453A00EA9A9C /* Mocks */,
-				658A27BC1BF1421200EA9A9C /* Info.plist */,
 				658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */,
+				658A27BC1BF1421200EA9A9C /* Info.plist */,
 			);
 			path = KittyKitTests;
 			sourceTree = "<group>";
@@ -142,16 +142,13 @@
 			children = (
 				658A27C61BF1424900EA9A9C /* xcconfigs */,
 			);
-			name = External;
+			path = External;
 			sourceTree = "<group>";
 		};
 		658A27C61BF1424900EA9A9C /* xcconfigs */ = {
 			isa = PBXGroup;
 			children = (
 				658A27C71BF1424900EA9A9C /* Debug.xcconfig */,
-				658A27C81BF1424900EA9A9C /* iOS Framework.xcconfig */,
-				658A27C91BF1424900EA9A9C /* iOS Static Library.xcconfig */,
-				658A27CA1BF1424900EA9A9C /* iOS Tests.xcconfig */,
 				658A27CB1BF1424900EA9A9C /* OSX Framework.xcconfig */,
 				658A27CC1BF1424900EA9A9C /* OSX Tests.xcconfig */,
 				658A27CD1BF1424900EA9A9C /* Release.xcconfig */,
@@ -160,10 +157,12 @@
 				658A27D01BF1424900EA9A9C /* Shared Framework_Tests.xcconfig */,
 				658A27D11BF1424900EA9A9C /* Shared.xcconfig */,
 				658A27D21BF1424900EA9A9C /* Warnings.xcconfig */,
+				658A27C81BF1424900EA9A9C /* iOS Framework.xcconfig */,
+				658A27C91BF1424900EA9A9C /* iOS Static Library.xcconfig */,
+				658A27CA1BF1424900EA9A9C /* iOS Tests.xcconfig */,
 				658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */,
 			);
-			name = xcconfigs;
-			path = External/xcconfigs;
+			path = xcconfigs;
 			sourceTree = "<group>";
 		};
 		658A27E21BF1453A00EA9A9C /* Mocks */ = {
@@ -182,7 +181,7 @@
 				658A27F41BF1524400EA9A9C /* Tests_Debug.xcconfig */,
 				658A27F51BF1525D00EA9A9C /* Tests_Release.xcconfig */,
 			);
-			name = Configurations;
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
