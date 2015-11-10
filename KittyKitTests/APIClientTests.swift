@@ -75,6 +75,6 @@ class APIClientTests: XCTestCase {
             expectation.fulfill()
         }
         
-        waitForExpectationsWithTimeout(2.0, handler: nil)
+        waitForExpectationsWithTimeout(10.0, handler: nil)
     }
 }

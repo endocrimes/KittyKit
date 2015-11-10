@@ -14,11 +14,11 @@ public enum APIErrors : ErrorType {
     case UnableToFindToken
 }
 
-public enum URLExpiry {
-    case TenMins
-    case OneHour
-    case OneDay
-    case OneWeek
+public enum URLExpiry: Int {
+    case TenMins = 10
+    case OneHour = 60
+    case OneDay  = 1440
+    case OneWeek = 10080
 }
 
 public typealias AuthenticityToken = String
@@ -46,23 +46,33 @@ public class APIClient: APIClientProtocol {
     }
     
     public func submitURL(url: String, expiry: URLExpiry, token: AuthenticityToken, completion: Either<String, APIErrors> -> ()) {
-        let postRaw = "utf8=%E2%9C%93&authenticity_token=\(token)&entry%5Bvalue%5D=\(url)&entry%5Bduration_in_minutes%5D=10"
+        let postBody = "utf8=%E2%9C%93&authenticity_token=\(token)&entry%5Bvalue%5D=\(url)&entry%5Bduration_in_minutes%5D=\(expiry.rawValue)".dataUsingEncoding(NSUTF8StringEncoding)
         
-        let postBody = postRaw.dataUsingEncoding(NSUTF8StringEncoding)
-        
-        let urlRequest = NSMutableURLRequest(URL: NSURL(string: "https://small.cat/entries")!)
+        let urlRequest = NSMutableURLRequest(URL: NSURL(string: "http://small.cat/entries")!)
         urlRequest.HTTPMethod = "POST"
         urlRequest.HTTPBody = postBody
-        NSURLSession.sharedSession().dataTaskWithRequest(urlRequest) { data, response, error in
+        
+        let urlSession = NSURLSession.sharedSession()
+        
+        urlSession.dataTaskWithRequest(urlRequest) { data, response, error in
             guard let response = response as? NSHTTPURLResponse,
-                headers = response.allHeaderFields as? [ String : String ],
-                destination = headers["Location"]
+                destination = response.URL
             else {
                 completion(.Right(APIErrors.InvalidResponse))
                 return
             }
             
-            completion(.Left(destination))
+            urlSession.dataTaskWithURL(destination) { data, response, error in
+                guard let data = data,
+                    text = String(data: data, encoding: NSUTF8StringEncoding),
+                    urlString = parseSmallCatURLFromHTML(text)
+                else {
+                    completion(.Right(APIErrors.InvalidResponse))
+                    return
+                }
+                
+                completion(.Left(urlString))
+            }.resume()
         }.resume()
     }
 }
