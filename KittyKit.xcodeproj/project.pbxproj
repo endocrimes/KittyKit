@@ -30,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		1A98BC0550BF9A08E9E36662 /* Pods_KittyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KittyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6504449C1BF26B1100E36607 /* Framework_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework_Debug.xcconfig; sourceTree = "<group>"; };
+		6504449D1BF26B2B00E36607 /* Framework_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework_Release.xcconfig; sourceTree = "<group>"; };
 		65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticityTokenParser.swift; sourceTree = "<group>"; };
 		658A27AB1BF1421200EA9A9C /* KittyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KittyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658A27AE1BF1421200EA9A9C /* KittyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KittyKit.h; sourceTree = "<group>"; };
@@ -181,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				658A27EE1BF1507400EA9A9C /* Framework.xcconfig */,
+				6504449C1BF26B1100E36607 /* Framework_Debug.xcconfig */,
+				6504449D1BF26B2B00E36607 /* Framework_Release.xcconfig */,
 				658A27EF1BF1507B00EA9A9C /* Tests.xcconfig */,
 				658A27F41BF1524400EA9A9C /* Tests_Debug.xcconfig */,
 				658A27F51BF1525D00EA9A9C /* Tests_Release.xcconfig */,
@@ -493,7 +497,7 @@
 		};
 		658A27C01BF1421200EA9A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658A27EE1BF1507400EA9A9C /* Framework.xcconfig */;
+			baseConfigurationReference = 6504449C1BF26B1100E36607 /* Framework_Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -515,7 +519,7 @@
 		};
 		658A27C11BF1421200EA9A9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658A27EE1BF1507400EA9A9C /* Framework.xcconfig */;
+			baseConfigurationReference = 6504449D1BF26B2B00E36607 /* Framework_Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

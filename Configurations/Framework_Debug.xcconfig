@@ -1,0 +1,10 @@
+//
+//  Framework_Debug.xcconfig
+//  KittyKit
+//
+//  Created by  Danielle Lancashireon 10/11/2015.
+//  Copyright © 2015 Rocket Apps Limited. All rights reserved.
+//
+
+#include "Framework.xcconfig"
+#include "Pods/Target Support Files/Pods-KittyKit/Pods-KittyKit.debug.xcconfig"

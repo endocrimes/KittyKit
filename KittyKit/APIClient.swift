@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import DANCurlRequest
 
 public enum APIErrors : ErrorType {
     case InvalidResponse
