@@ -1,6 +1,0 @@
-framework module DANCurlRequest {
-  umbrella header "DANCurlRequest-umbrella.h"
-
-  export *
-  module * { export * }
-}
