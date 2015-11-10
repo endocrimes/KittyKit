@@ -1,7 +1,6 @@
 use_frameworks!
 
 target 'KittyKit' do
-pod "DANCurlRequest"
 end
 
 target 'KittyKitTests' do
