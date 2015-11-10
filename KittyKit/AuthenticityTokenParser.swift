@@ -14,6 +14,7 @@ internal func parseAuthenticityTokenFromHTML(html: String) -> String? {
     guard let match = regex.firstMatchInString(html, options: [], range: NSRange(location: 0, length: html.characters.count)) else {
         return nil
     }
+    guard match.numberOfRanges >= 2 else { return nil }
     
-    return (html as NSString).substringWithRange(match.range)
+    return (html as NSString).substringWithRange(match.rangeAtIndex(1))
 }
