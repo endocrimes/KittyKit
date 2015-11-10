@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6504449F1BF2748600E36607 /* SmallCatURLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504449E1BF2748600E36607 /* SmallCatURLParser.swift */; };
 		65855FB11BF1593300A1FE97 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */; };
 		65855FB41BF1599400A1FE97 /* homepage.html in Resources */ = {isa = PBXBuildFile; fileRef = 658A27E31BF1453A00EA9A9C /* homepage.html */; };
 		65855FB81BF15D5F00A1FE97 /* AuthenticityTokenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */; };
@@ -32,6 +33,7 @@
 		1A98BC0550BF9A08E9E36662 /* Pods_KittyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KittyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6504449C1BF26B1100E36607 /* Framework_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework_Debug.xcconfig; sourceTree = "<group>"; };
 		6504449D1BF26B2B00E36607 /* Framework_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework_Release.xcconfig; sourceTree = "<group>"; };
+		6504449E1BF2748600E36607 /* SmallCatURLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallCatURLParser.swift; sourceTree = "<group>"; };
 		65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticityTokenParser.swift; sourceTree = "<group>"; };
 		658A27AB1BF1421200EA9A9C /* KittyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KittyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658A27AE1BF1421200EA9A9C /* KittyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KittyKit.h; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				658A27E71BF1456B00EA9A9C /* APIClient.swift */,
+				6504449E1BF2748600E36607 /* SmallCatURLParser.swift */,
 				65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */,
 				658A27E91BF145AE00EA9A9C /* Either.swift */,
 				658A27B01BF1421200EA9A9C /* Info.plist */,
@@ -387,6 +390,7 @@
 				65855FB81BF15D5F00A1FE97 /* AuthenticityTokenParser.swift in Sources */,
 				658A27EA1BF145AE00EA9A9C /* Either.swift in Sources */,
 				658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */,
+				6504449F1BF2748600E36607 /* SmallCatURLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
