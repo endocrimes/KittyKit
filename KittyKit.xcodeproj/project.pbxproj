@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		65855FB11BF1593300A1FE97 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */; };
 		65855FB41BF1599400A1FE97 /* homepage.html in Resources */ = {isa = PBXBuildFile; fileRef = 658A27E31BF1453A00EA9A9C /* homepage.html */; };
+		65855FB81BF15D5F00A1FE97 /* AuthenticityTokenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */; };
 		658A27AF1BF1421200EA9A9C /* KittyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 658A27AE1BF1421200EA9A9C /* KittyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		658A27B61BF1421200EA9A9C /* KittyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658A27AB1BF1421200EA9A9C /* KittyKit.framework */; };
 		658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E71BF1456B00EA9A9C /* APIClient.swift */; };
-		658A27EA1BF145AE00EA9A9C /* Maybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E91BF145AE00EA9A9C /* Maybe.swift */; };
+		658A27EA1BF145AE00EA9A9C /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E91BF145AE00EA9A9C /* Either.swift */; };
 		7D3A1DE8DCD75F90C8227406 /* Pods_KittyKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5AEB05690460E2C4A89F4 /* Pods_KittyKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticityTokenParser.swift; sourceTree = "<group>"; };
 		658A27AB1BF1421200EA9A9C /* KittyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KittyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658A27AE1BF1421200EA9A9C /* KittyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KittyKit.h; sourceTree = "<group>"; };
 		658A27B01BF1421200EA9A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +49,7 @@
 		658A27D31BF1424900EA9A9C /* watchOS Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS Framework.xcconfig"; sourceTree = "<group>"; };
 		658A27E31BF1453A00EA9A9C /* homepage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = homepage.html; sourceTree = "<group>"; };
 		658A27E71BF1456B00EA9A9C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		658A27E91BF145AE00EA9A9C /* Maybe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maybe.swift; sourceTree = "<group>"; };
+		658A27E91BF145AE00EA9A9C /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		658A27EB1BF1477D00EA9A9C /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		658A27EE1BF1507400EA9A9C /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
 		658A27EF1BF1507B00EA9A9C /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 			children = (
 				658A27AE1BF1421200EA9A9C /* KittyKit.h */,
 				658A27E71BF1456B00EA9A9C /* APIClient.swift */,
-				658A27E91BF145AE00EA9A9C /* Maybe.swift */,
+				65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */,
+				658A27E91BF145AE00EA9A9C /* Either.swift */,
 				658A27B01BF1421200EA9A9C /* Info.plist */,
 			);
 			path = KittyKit;
@@ -342,7 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658A27EA1BF145AE00EA9A9C /* Maybe.swift in Sources */,
+				65855FB81BF15D5F00A1FE97 /* AuthenticityTokenParser.swift in Sources */,
+				658A27EA1BF145AE00EA9A9C /* Either.swift in Sources */,
 				658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

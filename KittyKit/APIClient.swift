@@ -8,19 +8,36 @@
 
 import Foundation
 
+public enum APIErrors : ErrorType {
+    case InvalidResponse
+    case UnableToFindToken
+}
+
 public typealias AuthenticityToken = String
 
 public protocol APIClientProtocol {
-    func fetchAuthenticityToken(completion: Maybe<AuthenticityToken, ErrorType> -> ())
-    func submitURL(url: String, token: AuthenticityToken, completion: Maybe<String, ErrorType> -> ())
+    func fetchAuthenticityToken(completion: Either<AuthenticityToken, ErrorType> -> ())
+    func submitURL(url: String, token: AuthenticityToken, completion: Either<String, ErrorType> -> ())
 }
 
 public class APIClient: APIClientProtocol {
-    public func fetchAuthenticityToken(completion: Maybe<AuthenticityToken, ErrorType> -> ()) {
-        
+    public func fetchAuthenticityToken(completion: Either<AuthenticityToken, ErrorType> -> ()) {
+        NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: "https://small.cat")!) { data, response, error in
+            guard let data = data, text = String(data: data, encoding: NSUTF8StringEncoding) else {
+                completion(.Right(APIErrors.InvalidResponse))
+                return
+            }
+            
+            guard let authenticityToken = parseAuthenticityTokenFromHTML(text) else {
+                completion(.Right(APIErrors.UnableToFindToken))
+                return
+            }
+            
+            completion(.Left(authenticityToken))
+        }.resume()
     }
     
-    public func submitURL(url: String, token: AuthenticityToken, completion: Maybe<String, ErrorType> -> ()) {
+    public func submitURL(url: String, token: AuthenticityToken, completion: Either<String, ErrorType> -> ()) {
         
     }
 }
