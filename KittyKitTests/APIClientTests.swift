@@ -26,7 +26,7 @@ class APIClientTests: XCTestCase {
         OHHTTPStubs.removeAllStubs()
     }
     
-    func test_can_retreive_verification_token() {
+    func test_can_retreive_authenticity_token() {
         let testBundle = NSBundle(forClass: self.dynamicType)
         let filePath = testBundle.pathForResource("homepage", ofType: "html")!
         stub(isScheme("https") && isHost("small.cat")) { _ in
@@ -34,9 +34,24 @@ class APIClientTests: XCTestCase {
         }
         
         let expectation = expectationWithDescription("Completion should be called")
-        apiClient?.fetchAuthenticityToken { (result: Either<AuthenticityToken, ErrorType>) in
+        apiClient?.fetchAuthenticityToken { (result: Either<AuthenticityToken, APIErrors>) in
             XCTAssertNotNil(result.left)
             XCTAssertEqual(result.left, "hw9PNaQf7qh9yFsD2lMK1V7GPJfW6VLjLm4ftlLj9mw=")
+            expectation.fulfill()
+        }
+        
+        waitForExpectationsWithTimeout(1.0, handler: nil)
+    }
+    
+    func test_handles_a_bad_response_when_fetching_a_authenticity_token() {
+        stub(isScheme("https") && isHost("small.cat")) { _ in
+            return OHHTTPStubsResponse(fileAtPath: "", statusCode: 500, headers: nil)
+        }
+        
+        let expectation = expectationWithDescription("Completion should be called")
+        apiClient?.fetchAuthenticityToken { (result: Either<AuthenticityToken, APIErrors>) in
+            XCTAssertNotNil(result.right)
+            XCTAssertEqual(result.right!, APIErrors.UnableToFindToken)
             expectation.fulfill()
         }
         
