@@ -15,6 +15,7 @@
 		658A27E81BF1456B00EA9A9C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E71BF1456B00EA9A9C /* APIClient.swift */; };
 		658A27EA1BF145AE00EA9A9C /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A27E91BF145AE00EA9A9C /* Either.swift */; };
 		7D3A1DE8DCD75F90C8227406 /* Pods_KittyKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5AEB05690460E2C4A89F4 /* Pods_KittyKitTests.framework */; };
+		B5CC9B67A9F5EE5E0962261F /* Pods_KittyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A98BC0550BF9A08E9E36662 /* Pods_KittyKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A98BC0550BF9A08E9E36662 /* Pods_KittyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KittyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65855FB71BF15D5F00A1FE97 /* AuthenticityTokenParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticityTokenParser.swift; sourceTree = "<group>"; };
 		658A27AB1BF1421200EA9A9C /* KittyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KittyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658A27AE1BF1421200EA9A9C /* KittyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KittyKit.h; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CC9B67A9F5EE5E0962261F /* Pods_KittyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				FBF5AEB05690460E2C4A89F4 /* Pods_KittyKitTests.framework */,
+				1A98BC0550BF9A08E9E36662 /* Pods_KittyKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,10 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 658A27BF1BF1421200EA9A9C /* Build configuration list for PBXNativeTarget "KittyKit" */;
 			buildPhases = (
+				41FF48AA904A49FE2413A2A4 /* Check Pods Manifest.lock */,
 				658A27A61BF1421200EA9A9C /* Sources */,
 				658A27A71BF1421200EA9A9C /* Frameworks */,
 				658A27A81BF1421200EA9A9C /* Headers */,
 				658A27A91BF1421200EA9A9C /* Resources */,
+				5B7B31AE649D7D65FD195C94 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +326,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittyKitTests/Pods-KittyKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41FF48AA904A49FE2413A2A4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B7B31AE649D7D65FD195C94 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittyKit/Pods-KittyKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D25F84AEFB9FC2892089FE01 /* Check Pods Manifest.lock */ = {
