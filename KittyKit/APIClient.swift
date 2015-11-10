@@ -13,11 +13,18 @@ public enum APIErrors : ErrorType {
     case UnableToFindToken
 }
 
+public enum URLExpiry {
+    case TenMins
+    case OneHour
+    case OneDay
+    case OneWeek
+}
+
 public typealias AuthenticityToken = String
 
 public protocol APIClientProtocol {
     func fetchAuthenticityToken(completion: Either<AuthenticityToken, APIErrors> -> ())
-    func submitURL(url: String, token: AuthenticityToken, completion: Either<String, ErrorType> -> ())
+    func submitURL(url: String, expiry: URLExpiry, token: AuthenticityToken, completion: Either<String, APIErrors> -> ())
 }
 
 public class APIClient: APIClientProtocol {
@@ -37,7 +44,7 @@ public class APIClient: APIClientProtocol {
         }.resume()
     }
     
-    public func submitURL(url: String, token: AuthenticityToken, completion: Either<String, ErrorType> -> ()) {
+    public func submitURL(url: String, expiry: URLExpiry, token: AuthenticityToken, completion: Either<String, APIErrors> -> ()) {
         
     }
 }
