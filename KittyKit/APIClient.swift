@@ -16,12 +16,12 @@ public enum APIErrors : ErrorType {
 public typealias AuthenticityToken = String
 
 public protocol APIClientProtocol {
-    func fetchAuthenticityToken(completion: Either<AuthenticityToken, ErrorType> -> ())
+    func fetchAuthenticityToken(completion: Either<AuthenticityToken, APIErrors> -> ())
     func submitURL(url: String, token: AuthenticityToken, completion: Either<String, ErrorType> -> ())
 }
 
 public class APIClient: APIClientProtocol {
-    public func fetchAuthenticityToken(completion: Either<AuthenticityToken, ErrorType> -> ()) {
+    public func fetchAuthenticityToken(completion: Either<AuthenticityToken, APIErrors> -> ()) {
         NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: "https://small.cat")!) { data, response, error in
             guard let data = data, text = String(data: data, encoding: NSUTF8StringEncoding) else {
                 completion(.Right(APIErrors.InvalidResponse))
