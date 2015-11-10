@@ -58,14 +58,11 @@ class APIClientTests: XCTestCase {
         waitForExpectationsWithTimeout(1.0, handler: nil)
     }
     
+    // TODO: Stub the requests for this test
     func test_url_submission() {
         let inputURL = "http://danie.lt"
         let token = "hw9PNaQf7qh9yFsD2lMK1V7GPJfW6VLjLm4ftlLj9mw="
         let timeout = URLExpiry.TenMins
-        
-//        stub(isScheme("https") && isHost("small.cat") && isMethodPOST()) { _ in
-//            return OHHTTPStubsResponse(fileAtPath: "", statusCode: 500, headers: nil)
-//        }
         
         let expectation = expectationWithDescription("Completion should be called")
         apiClient?.submitURL(inputURL, expiry: timeout, token: token) { result in
