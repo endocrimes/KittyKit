@@ -28,6 +28,8 @@ public protocol APIClientProtocol {
 }
 
 public class APIClient: APIClientProtocol {
+    public init() {}
+
     public func fetchAuthenticityToken(completion: Either<AuthenticityToken, APIErrors> -> ()) {
         NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: "https://small.cat")!) { data, response, error in
             guard let data = data, text = String(data: data, encoding: NSUTF8StringEncoding) else {
