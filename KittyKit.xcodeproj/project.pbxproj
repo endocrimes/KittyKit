@@ -471,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6504449C1BF26B1100E36607 /* Framework_Debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -493,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6504449D1BF26B2B00E36607 /* Framework_Release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;

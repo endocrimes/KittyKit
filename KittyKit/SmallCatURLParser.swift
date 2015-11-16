@@ -2,7 +2,7 @@
 //  SmallCatURLParser.swift
 //  KittyKit
 //
-//  Created by  Danielle Lancashireon 10/11/2015.
+//  Created by Danielle Lancashire on 10/11/2015.
 //  Copyright © 2015 Rocket Apps Limited. All rights reserved.
 //
 
